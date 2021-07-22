@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+}
+.ribbon{
+    background-color: #5BC8F7;
+}
+.ribbon::after{
+    content: "this is a fancy orange box.";
+    background-color: #FFBA10;
+    border-color: black;
+    border-style: dotted;
+}
+.q::before{
+    content: "«";
+    color: blue;
+}
+.q::after{
+    content: "»";
+    color: red;
+}
+p::first-letter{
+    color: red;
+    font-size: 130%;
+}
+::first-line {
+    color: blue;
+    text-transform: uppercase;
+  
+  
+    /* ADVERTENCIA: NO USES ESTOS*/
+    /* Muchas propiedades son inválidas en pseudoelementos ::first-line */
+    margin-left: 20px;
+    text-indent: 20px;
+}
+/* dibuja en cualquier texto seleccionado el color amarillo  sobre un fondo rojo */
+::-moz-selection { color: gold;  background: red; }
+::selection      { color: gold;  background: red; }
+h1::backdrop{
+    background-color: rosybrown;
+    color: slateblue;
+}
+input::placeholder {
+    color: red;
+    font-size: 1.2em;
+    font-style: italic;
+}
+ul li::marker {
+    color: purple;
+    font-size: 1.5em;
+}
+::spelling-error {
+    color: cyan;
+}
+::grammar-error  {
+    text-decoration: underline midnightblue;
+    color: red;
+}

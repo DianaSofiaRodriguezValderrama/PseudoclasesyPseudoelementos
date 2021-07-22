@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios de repaso Pseudoclases y Pseudoelementos</title>
+        <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <style>
+            .boton{
+                background-color: red;
+                height: 2rem;
+                width: 4rem;
+            }
+            .a{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+            div a:hover{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <h1>Pseudo-classes</h1>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 boton">
+        <a href="https://www.youtube.com/watch?v=KLozxox9F9s&list=RDMMKLozxox9F9s&start_radio=1">Soy boton youtube</a>
+        <div class="col-md-4"></div>
+            </div>
+        </div>
+        <h1>Pseudoelementos</h1>
+        <div class="col-md-3">
+            <samp class="ribbon">1Mire el cuadro naranja después de este texto.</samp>
+        </div>
+        <div class="col-md-1">
+            <q>2Algunas citas</q>, él dijo, <q>Son mejores que ninguna</q>
+        </div>
+        <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+              <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+              <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat.</p>
+              <p>-El comienzo es un signo de puntuación especial.</p>
+              <p>_El comienzo es un signo de puntuación especial.</p>
+              <p>"El comienzo es un signo de puntuación especial.</p>
+              <p>'El comienzo es un signo de puntuación especial.</p>
+              <p>*El comienzo es un signo de puntuación especial.</p>
+              <p>#El comienzo es un signo de puntuación especial.</p>
+              <p>「特殊的汉字标点符号开头。</p>
+              <p>《特殊的汉字标点符号开头。</p>
+              <p>“特殊的汉字标点符号开头。</p>
+        </div>
+        <div class="col-md-4">
+            <p>Los estilos sólo se aplicarán en la primera línea de este párrafo.
+                Posteriormente, todo el texto tendrá el estilo normal.
+                ¿Ves?</p>
+                
+                <span>La primera línea de este elemento no recibe ningún estilo
+                especial, porque no es un elemento de bloque.</span>
+        </div>
+        <div class="col-md-10">
+            <p>《特殊的汉字标点符号开头。</p>
+        </div>
+        <div class="col-md-2">
+            <h1>Hola</h1>
+        </div>
+        <div class="col-md-10">
+            <input placeholder="¡Escriba algo aquí!">
+        </div>
+        <div class="col-md-2">
+            <ul>
+                <li>Duraznos</li>
+                <li>Manzanas</li>
+                <li>Ciruelas</li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <p>ここに何か入力してください！</p>
+        </div>
+        <div class="col-md-2">
+            <p>Mis amigos vendrán a la fiesta esta noche.</p>
+        </div>
+    </body>
+</html>
